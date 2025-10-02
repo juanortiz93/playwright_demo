@@ -31,7 +31,7 @@ test.describe('New Todo', () => {
     // Make sure the list now has two todo items.
     await expect(page.getByTestId('todo-title')).toHaveText([
       TODO_ITEMS[0],
-      TODO_ITEMS[1]
+      TODO_ITEMS[2]
     ]);
 
     await checkNumberOfTodosInLocalStorage(page, 2);
